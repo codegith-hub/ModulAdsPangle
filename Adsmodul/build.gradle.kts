@@ -38,7 +38,7 @@ dependencies {
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
     implementation (libs.masterads)
-
+    implementation (libs.gson)
     implementation (libs.ads.sdk)
     implementation (libs.play.services.ads.identifier)
 }

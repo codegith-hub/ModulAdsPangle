@@ -26,6 +26,7 @@ import java.security.NoSuchAlgorithmException;
 public class AdsHelper {
     public static boolean openads = false;
     public static boolean debugMode;
+    public static boolean directData = false;
     public static void gdpr(Activity activity, Boolean childDirected, String keypos) {
     }
 
@@ -58,6 +59,7 @@ public class AdsHelper {
     public static void showBanner(Activity activity, RelativeLayout layout, String metaId) {
         PAGBannerSize bannerSize = PAGBannerSize.BANNER_W_320_H_50;
         PAGBannerRequest bannerRequest = new PAGBannerRequest(bannerSize);
+        directData = true;
         PAGBannerAd.loadAd(metaId, bannerRequest, new PAGBannerAdLoadListener() {
             @Override
             public void onError(int code, String message) {
@@ -79,6 +81,7 @@ public class AdsHelper {
     }
     public static PAGInterstitialAd interstitialAdPangle;
     public static void loadInterstitial(Activity activity, String admobId) {
+        directData = true;
         try {
             PAGInterstitialRequest request = new PAGInterstitialRequest();
             PAGInterstitialAd.loadAd(admobId,
