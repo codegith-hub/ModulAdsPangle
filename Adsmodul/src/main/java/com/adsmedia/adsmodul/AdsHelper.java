@@ -99,6 +99,7 @@ public class AdsHelper {
         } catch (Exception e) {
             e.printStackTrace();
         }
+        MasterAdsHelper.loadInterstitial(activity);
     }
 
     public static int count = 0;
