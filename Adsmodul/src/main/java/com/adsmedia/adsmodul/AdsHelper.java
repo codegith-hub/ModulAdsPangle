@@ -27,7 +27,9 @@ public class AdsHelper {
     public static boolean openads = false;
     public static boolean debugMode;
     public static boolean directData = false;
-    public static void gdpr(Activity activity, Boolean childDirected, String keypos) {
+    public static void gdpr(Activity activity, Boolean childDirected, String keypos,String gameAppId) {
+
+
     }
 
     public static void initializeAds(Activity activity, int pos) {
