@@ -41,6 +41,8 @@ dependencies {
     implementation (libs.gson)
     implementation (libs.ads.sdk)
     implementation (libs.play.services.ads.identifier)
+    implementation(libs.play.services.ads)
+
 }
 android {
     publishing {
